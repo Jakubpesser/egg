@@ -14,11 +14,19 @@
 
 input.onButtonPressed(Button.A, function () {
     ExpSense.restart()
+    basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . # . .
+    . . . . .
+    . . . . .
+    `)
 }) 
 
 ExpSense.onExplosiveState(function(xaxis: number, yaxis: number, shakingvalue: number) {
     console.logValue("x", xaxis)
     console.logValue("y", yaxis)
+    if (xaxis ===)
 })
 
 ExpSense.onExplode(function() {
