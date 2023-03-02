@@ -21,12 +21,28 @@ input.onButtonPressed(Button.A, function () {
     . . . . .
     . . . . .
     `)
-}) 
+})
 
 ExpSense.onExplosiveState(function(xaxis: number, yaxis: number, shakingvalue: number) {
     console.logValue("x", xaxis)
     console.logValue("y", yaxis)
-    if (xaxis ===)
+    if (xaxis == -1) {
+        basic.showLeds(`
+    . . . . .
+    . . . . .
+    . # . . .
+    . . . . .
+    . . . . .
+    `)
+    }else if (xaxis == 0) {
+    basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . # . .
+    . . . . .
+    . . . . .
+    `)
+    }
 })
 
 ExpSense.onExplode(function() {
